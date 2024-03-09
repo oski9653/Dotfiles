@@ -1,0 +1,113 @@
+
+
+* {
+    border: 0px;
+    font-family: 'Source Code Pro';
+    font-size: 16px;
+    min-height: 0px;
+}
+
+window > box {
+margin: 10px 5px 0px 5px;
+background-color: rgba(0,0,0,0);
+}
+window#waybar {
+    background-color: rgba(0,0,0,0);
+    color: @color7;
+}
+#workspaces button {
+    border-radius: 0px;
+    color: @color7;
+}
+#workspaces {
+    color: @color7;
+    border: 0px;
+    box-shadow: inherit;
+}
+
+#workspaces button {
+    background-color: transparent;
+    color: @color8;
+}
+#workspaces button:hover {
+    color: @color4;
+    background-color: transparent;
+}
+#workspaces button.visible {
+    color: @color7;
+}
+#workspaces button.focused {
+    color: @color8;
+}
+#workspaces button.active {
+    color: @color7;
+}
+#workspaces button.urgent {
+    color: @color1;
+}
+.modules-center {
+}
+.modules-left {
+}
+.modules-right {
+}
+#tray, 
+#mode, 
+#window,
+#temperature,
+#temperature.critical,
+#clock,
+#cpu,
+#pulseaudio,
+#disk,
+#custom-dot,
+#custom-vpnstatus,
+#workspaces,
+#custom-updates,
+#taskbar
+{
+background-color: @transbg;
+/*  border-radius: 7px;
+  border-top: 2px solid @color8;
+  border-left: 2px solid @color8;
+  border-right: 2px solid @color8;
+  border-bottom: 2px solid @color8;
+*/
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+@keyframes blink {
+    to {
+        background-color: @color0;
+        color: @color7;
+    }
+}
+label:focus {
+}
+#custom-dot {
+  padding-top: 0px;
+  color: @color4;
+}
+#custom-vpnstatus {
+/*  color: @color1;*/
+/*  font-size: 20px;*/
+}
+#custom-spotify {
+}
+#memory {
+}
+#pulseaudio {
+}
+#pulseaudio.muted {
+}
+#tray {
+}
+#disk {
+}
+#window {
+}
+#clock {
+}
+	

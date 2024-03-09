@@ -1,0 +1,88 @@
+{
+    "position": "top",
+    "layer": "top",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-right": ["custom/updates",  "clock#date", "clock"],
+    "modules-center": [],
+    // Modules configuration
+   
+     "hyprland/workspaces": {
+	"format": "{icon}",
+	"persistent-workspaces": {
+        "DP-1": [ 1, 2, 3, 4, 5 ],
+        "DP-2": [ 6, 7, 8, 9, 10 ],
+    	},
+        "format-icons": {
+	"active": "",
+	"default": "",
+	"empty": ""
+	},
+    },
+   "hyprland/window": {
+    "max-length": 60,
+    "format": " {}",
+    "rewrite": {
+	" ":" Empty workspace" 
+	},
+    "separate-outputs": true
+},
+   "custom/dot":{
+    "format": ":",
+    "interval": 100,
+    },
+    "disk": {
+    "interval": 30,
+    "format": " {percentage_used}%",
+    "path": "/"
+    },
+
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "tray": {
+        //"icon-size": 20,
+        "spacing": 10
+    },
+    "clock#date": {
+	"timezone": "Europe/London",
+	"format":" {:%d %b}",
+        "interval": 1,
+        "on-click": "zenity --calendar"
+    },    
+    "clock": {
+        "timezone": "Europe/London",
+        "format":"{:%H:%M}",
+	"interval": 1,
+	"on-click": "zenity --calendar"
+    },
+    "cpu": {
+    "interval": 5,
+    "format": "{}%",
+    },
+    "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+    },
+    "pulseaudio": {
+        "scroll-step": 5, // %, can be a float
+        "format": "{icon} {volume}%",
+        "format-muted": " Muted",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol",
+        "on-click-middle": "pamixer -t"
+    },
+    "custom/updates": {
+       "format": "{icon} {}",
+       "return-type": "json",
+       "format-icons": {
+           "has-updates": "",
+           "updated": ""
+       },
+       "exec-if": "which waybar-module-pacman-updates",
+       "exec": "waybar-module-pacman-updates",
+       "on-click": "alacritty -e yay -Syyu",
+   }
+}
