@@ -1,0 +1,12 @@
+#zsh config
+
+eval "$(starship init zsh)"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.emacs.d/bin:$PATH"
+fastfetch
+alias ls='exa --icons'
+bindkey '^' autosuggest-accept
+
+#PLUGINS
+source ~/scripts/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/scripts/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh

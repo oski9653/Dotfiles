@@ -1,0 +1,10 @@
+font_family      JetBrainsMonoNL
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Frappe
+include current-theme.conf
+# END_KITTY_THEME%  
