@@ -6,12 +6,12 @@
     "layer": "top",
     "position": "top",
     "mod": "dock",
-    "height": 28, //28
-    "width": 1900, //1900
+    "height": 24, //28
+    "width": 1910, //1900
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "margin-top": 10, //10
+    "margin-top": 5, //10
 
 
 // positions generated based on config.ctl //
@@ -31,6 +31,24 @@
         "on-click-right": "~/.config/hyprdots/scripts/logoutlaunch.sh 1",
         "interval" : 86400, // once every day
         "tooltip": true
+    },
+   "hyprland/workspaces": {
+   "disable-scroll": true,
+    "all-outputs": true,
+    "warp-on-scroll": false,
+    "format": "{icon}",
+    "format-icons": {
+    "1": "一",
+    "2": "二",
+    "3": "三",
+    "4": "四",
+    "5": "五",
+    "6": "六",
+    "7": "七",
+    "8": "八",
+    "9": "九",
+    "10": "十",
+    }
     },
 
     "custom/cliphist": {
