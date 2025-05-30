@@ -4,6 +4,9 @@ italic_font      auto
 bold_italic_font auto
 
 # BEGIN_KITTY_THEME
-# Kanagawa_dragon
+# Nord
 include current-theme.conf
 # END_KITTY_THEME%  
+confirm_os_window_close 0
+scrollback_pager nvim +"source /home/zim/kitty/vi-mode.lua"
+map alt+s show_scrollback

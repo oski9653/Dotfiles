@@ -9,4 +9,5 @@ return {
 	require("custom.plugins.zen-mode"),
 	require("custom.plugins.catppuccin"),
 	require("custom.plugins.lualine"),
+	require("custom.plugins.wal"),
 }
